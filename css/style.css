@@ -19,6 +19,7 @@ body, h1,  div, ul, li, p,a,  dl, dt, dd {
 	margin:0;
 	font-size:13px;
 	font-family:  NotoSansKR, AppleSDGothicNeo-Medium, san-serif ;
+	font-weight:300;
 	color: #1f1f1f;
 	
 }
