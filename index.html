@@ -1,50 +1,269 @@
-yygg<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
  <head>
   <meta charset="UTF-8">
   <title>yoo</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="js/jquery.lazyload.js"></script>
 
  </head>
 
- <body>
+<body data-spy="scroll" data-target=".navbar-example">
 	<div class="page">
-
 		<div class="sidebar">
-			<div class="header">
-			<h1></h1>
+			<div id="header">
+				<div class="title">
+					<h1 class="logo"><a href="index.html"></a></h1>
+					<div class="btn_list"></div>
+				</div>
+				<script>
+   $('.btn_list').click(function() { 
+	   $('.m_list').slideToggle(function() {
+			$('.btn_list').toggleClass('btn_list_close')
+	   }); 
+	   /*
+	   if ($('.m_list').css('display') === 'none')
+	   {
+		   //$('.m_list').show();
+		   $('.m_list').slideDown();
+	   } else {
+		    $('.m_list').slideUp();
+	   }*/
+	   	   
+   } );
+</script>
+				<div class="m_list">
+						<ul class="m_list_group">
+							<li>
+								<ul class="list_unit">이미디오 (2012~)
+									<li><a href="#imideo_pop">IMIDEO POP</a></li>
+									<li><a href="#imideo_renewal">WEBSITE RENEWAL</a></li>
+									<li><a href="#imideo_play">이미디오 개편기획</a></li>
+									<li><a href="#imideo_mobile">MOBILE PAGE</a></li>
+									<li><a href="#imideo_btn">PLAY BUTTON</a></li>
+									<li><a href="#imideo_etc">ETC</a></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="list_unit">SOOMPI/SOOMPISHOP (2012~2014)
+									<li><a href="#soompi_shop">SOOMPISHOP BANNERS</a></li>
+									<li><a href="#soompi_awards">SOOMPI AWARDS 2013</a></li>
+									<li><a href="#soompi_saleskit">SOOMPI SALES KIT</a></li>
+									<li><a href="#soompi_etc">ETC</a></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="list_unit">이미디오몰 (2013~2014)
+									<li><a href="#imideomall_kt">이미디오몰 · KT FAMILY SALE</a></li>
+								</ul>
+							</li>
+							<li>
+							<ul class="list_unit">OTHER PROJECTS
+								<li><a href="#other_pigmama">돼지엄마</a></li>
+								<li><a href="#other_enswers">ENSWERS WEBSITE SUBPAGES</a></li>
+								<li><a href="#other_it">INTERACTIVE TV</a></li>
+							</ul>
+							</li>
+							<li>
+							<ul class="list_unit">NH SHOPPING (2010-2011)
+								<li><a href="#nh_event">NH쇼핑 운영 디자인</a></li>
+							</ul>
+							</li>
+							<li>
+							<ul class="list_unit">ETC
+								<li><a href="#etc_cabal">카발온라인 메인시안 (2011)</a></li>
+								<li><a href="#etc_club">동호회</a></li>
+								<li><a href="#etc"></a></li>
+							</ul>
+						</li>
+						</ul>
+					</div>
 			</div>
 			
-			<div class="list">
-				<dl>
-					<dt>이미디오 (2012~)</dt>
-					<dd><a href="#">IMIDEO POP</a></dd>
-					<dd><a href="#">WEBSITE RENEWAL</a></dd>
-					<dd><a href="#">IMIDEO PLAY</a></dd>
-					<dd><a href="#">MOBILE PAGE</a></dd>
-					<dd><a href="#">PLAY BUTTON</a></dd>
-					<dd><a href="#">ETC</a></dd>
-				</dl>
-				<dl>
-					<dt>SOOMPI/SOOMPISHOP (2012~2014)</dt>
-					<dd><a href="#">SOOMPISHOP BANNERS</a></dd>
-					<dd><a href="#">SOOMPI AWARDS 2013</a></dd>
-					<dd><a href="#">SOOMPI SALES KIT</a></dd>
-					<dd><a href="#">ETC</a></dd>
-				</dl>
-				<dl>
-					<dt>이미디오몰 (2013~2014)</dt>
-					<dd><a href="#">KT FAMILY SALE</a></dd>
-					<dd><a href="#">IMIDEO MALL WEB/MOBILE PAGE</a></dd>
-				</dl>
+			<div class="list navbar-example">
+				<ul  class="nav nav-tabs" role="tablist">
+					<li>
+						<ul class="list_unit">이미디오 (2012~)
+							<li><a href="#imideo_pop">IMIDEO POP</a></li>
+							<li><a href="#imideo_renewal">WEBSITE RENEWAL</a></li>
+							<li><a href="#imideo_play">이미디오 개편기획</a></li>
+							<li><a href="#imideo_mobile">MOBILE PAGE</a></li>
+							<li><a href="#imideo_btn">PLAY BUTTON</a></li>
+							<li><a href="#imideo_etc">ETC</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul class="list_unit">SOOMPI/SOOMPISHOP (2012~2014)
+							<li><a href="#soompi_shop">SOOMPISHOP BANNERS</a></li>
+							<li><a href="#soompi_awards">SOOMPI AWARDS 2013</a></li>
+							<li><a href="#soompi_saleskit">SOOMPI SALES KIT</a></li>
+							<li><a href="#soompi_etc">ETC</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul class="list_unit">이미디오몰 (2013~2014)
+							<li><a href="#imideomall_kt">이미디오몰 · KT FAMILY SALE</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul class="list_unit">OTHER PROJECTS
+							<li><a href="#other_pigmama">돼지엄마</a></li>
+							<li><a href="#other_enswers">ENSWERS WEBSITE SUBPAGES</a></li>
+							<li><a href="#other_it">INTERACTIVE TV</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul class="list_unit">NH SHOPPING (2010-2011)
+							<li><a href="#nh_event">NH쇼핑 운영 디자인</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul class="list_unit">ETC
+							<li><a href="#etc_cabal">카발온라인 메인시안 (2011)</a></li>
+							<li><a href="#etc_club">동호회</a></li>
+							<li><a href="#etc"></a></li>
+						</ul>
+					</li>
+				</ul>
 			</div>
 		</div>
 		
 		<div class="content">
-             aaa
+		
+             <div class="work" id="imideo_pop">
+				 <div class="work_title">이미디오팝 IMIDEO POP<span>pop.imideo.com </span></div>
+				 <div class="work_title_line"></div>
+				 <div class="work_desc">이미디오 이슈영상/기사 큐레이션 서비스</div>
+				 <div class="work_desc">웹/모바일 디자인</div>
+				 <a href="http://pop.imideo.com" target="_blank"><img class="lazy" data-original="img/work_pop.png"></a>
+				 </div>
+			<div class="work" id="imideo_renewal">
+				 <div class="work_title">이미디오 웹사이트 리뉴얼시안</div>
+				 <div class="work_title_line"></div>
+				 <div class="work_desc">이미디오 통합 웹사이트</div>
+				 <div class="work_desc">디자인 시안 / 서브페이지 코딩</div>
+				 <img class="lazy" data-original="img/work_imideo_renewal.png">
+			 </div>
+			 <div class="work" id="imideo_play">
+				 <div class="work_title">이미디오 웹사이트 개편 기획 · 이미디오PLAY</div>
+				 <div class="work_title_line"></div>
+				 <div class="work_desc">이미디오  웹사이트 개편안 / 인기영상모음서비스 이미디오PLAY</div>
+				 <div class="work_desc">기획과 디자인</div>
+				 <img class="lazy" data-original="img/work_imideo_play.png">
+			 </div>
+			 <div class="work" id="imideo_mobile">
+				 <div class="work_title">이미디오 모바일페이지</div>
+				 <div class="work_title_line"></div>
+				 <div class="work_desc">이미디오 모바일용 페이지와 모바일 플레이어</div>
+				 <div class="work_desc">모바일 페이지 디자인</div>
+				 <a href="http://m.imideo.com" target="_blank"><img class="lazy" data-original="img/work_imideo_mobile.png"></a>
+			 </div>
+			 <div class="work" id="imideo_btn">
+				 <div class="work_title">이미디오 플레이버튼</div>
+				 <div class="work_title_line"></div>
+				 <div class="work_desc">웹 상의 모든 방송이미지 위에 붙는 이미디오 플레이 버튼을 누르면 해당 이미지로 검색된 영상이 재생된다.</div>
+				 <div class="work_desc">플레이 버튼 기획과 디자인, 커스터마이징</div>
+				 <img class="lazy" data-original="img/work_imideo_btn.png">
+			 </div>
+			 <div class="work" id="imideo_etc">
+				 <div class="work_title">이미디오 운영디자인</div>
+				 <div class="work_title_line"></div>
+				 <div class="work_desc">이미디오 관련 이벤트 페이지</div>
+				 <div class="work_desc">디자인</div>
+				 <a href="http://www.imideo.com" target="_blank"><img class="lazy" data-original="img/work_imideo_etc.png"></a>
+			 </div>
+			 <div class="work" id="soompi_shop">
+				 <div class="work_title">숨피샵 SOOMPISHOP DEAL BANNERS<span>shop.soompi.com</span></div>
+				 <div class="work_title_line"></div>
+				 <div class="work_desc">글로벌 한류사이트 숨피의 K-POP샵</div>
+				 <div class="work_desc">배너디자인</div>
+				 <a href="http://shop.soompi.com" target="_blank"><img class="lazy" data-original="img/work_soompi_shop.png"></a>
+			 </div>
+			 <div class="work" id="soompi_awards">
+				 <div class="work_title">숨피어워즈2013 SOOMPI AWARDS 2013<span>soompi.com</span></div>
+				 <div class="work_title_line"></div>
+				 <div class="work_desc">숨피에서 5개국어로 연례 개최되는 온라인 시상식</div>
+				 <div class="work_desc">로고 및 배너디자인</div>
+				 <a href="http://www.soompi.com" target="_blank"><img class="lazy" data-original="img/work_soompi_awards.png"></a>
+			 </div>
+			 <div class="work" id="soompi_saleskit">
+				 <div class="work_title">숨피세일즈킷 SOOMPI SALES KIT<span>soompi.com</span></div>
+				 <div class="work_title_line"></div>
+				 <div class="work_desc">숨피 제휴, 홍보 목적의 세일즈킷</div>
+				 <div class="work_desc">PPT 디자인과 제작</div>
+				 <a href="http://www.soompi.com" target="_blank"><img class="lazy" data-original="img/work_soompi_saleskit.png"></a>
+			 </div>
+			 <div class="work" id="soompi_etc">
+				 <div class="work_title">숨피 운영 디자인 <span>soompi.com</span></div>
+				 <div class="work_title_line"></div>
+				 <div class="work_desc">숨피 온/오프라인 홍보물 및 배너</div>
+				 <div class="work_desc">디자인</div>
+				 <a href="http://www.soompi.com" target="_blank"><img class="lazy" data-original="img/work_soompi_etc.png"></a>
+			 </div>
+			 <div class="work" id="imideomall_kt">
+				 <div class="work_title">이미디오몰<span>imideomall.com</span></div>
+				 <div class="work_title_line"></div>
+				 <div class="work_desc">TV속 상품정보를 제공하고 상품을 판매하는 쇼핑몰. KT임직원특판 진행</div>
+				 <a href="http://www.imideomall.com" target="_blank"><div class="work_desc">사이트 디자인과 코딩(고도몰) / 배너와 기획전 디자인</div></a>
+				 <img class="lazy" data-original="img/work_imideomall_kt.png">
+			 </div>
+			 <div class="work" id="other_pigmama">
+				 <div class="work_title">돼지엄마 PIGMAMA<span>pigmama.co.kr</span></div>
+				 <div class="work_title_line"></div>
+				 <div class="work_desc">온라인 쇼핑데이터를 분석해 실시간 인기상품을 제공하는 서비스</div>
+				 <div class="work_desc">사이트 디자인과 코딩</div>
+				 <a href="http://www.pigmama.co.kr" target="_blank"><img class="lazy" data-original="img/work_other_pigmama.png"></a>
+			 </div>
+			 <div class="work" id="other_enswers">
+				 <div class="work_title">엔써즈 웹사이트 서브페이지</div>
+				 <div class="work_title_line"></div>
+				 <div class="work_desc">엔써즈 컴퍼니사이트 서브페이지 시안</div>
+				 <div class="work_desc">비주얼 이미지 디자인</div>
+				 <img class="lazy" data-original="img/work_other_enswers.png">
+			 </div>
+			 <div class="work" id="other_it">
+				 <div class="work_title">INTERACTIVE TV</div>
+				 <div class="work_title_line"></div>
+				 <div class="work_desc">TV프로그램 방송 중 시청자와 실시간으로 양방향 소통하고 참여를 유도하는 서비스</div>
+				 <div class="work_desc">제휴사 제안 시안 디자인</div>
+				 <img class="lazy" data-original="img/work_other_it.png">
+			 </div>
+			 <div class="work" id="nh_event">
+				 <div class="work_title">NH쇼핑 이벤트디자인</div>
+				 <div class="work_title_line"></div>
+				 <div class="work_desc">농협 온라인쇼핑몰 이벤트, 기획전</div>
+				 <div class="work_desc">디자인과 코딩</div>
+				 <img class="lazy" data-original="img/work_nh.png">
+			 </div>
+			 <div class="work" id="etc_cabal">
+				 <div class="work_title">카발 온라인 메인페이지 시안<span>/cabal page</span></div>
+				 <div class="work_title_line"></div>
+				 <div class="work_desc">온라인게임 카발의 웹페이지(과제물)</div>
+				 <div class="work_desc">디자인과 코딩</div>
+				  <a href="../2012/cabal" target="_blank"><img class="lazy" data-original="img/work_etc_cabal.png"></a>
+			 </div>
+			 <div class="work" id="etc_club">
+				 <div class="work_title">동호회 웹페이지</div>
+				 <div class="work_title_line"></div>
+				 <div class="work_desc">사내동호회를 위한 활동보고 사이트</div>
+				 <div class="work_desc">디자인과 코딩</div>
+				 <a href="../handi" target="_blank"><img class="lazy" data-original="img/work_etc_club_hd01.png"></a>
+ 				  <a href="../handi" target="_blank"><img class="lazy" data-original="img/work_etc_club_hd01_02.png"></a>
+				  <a href="../handi" target="_blank"><img class="lazy" data-original="img/work_etc_club_hd01_03.png"></a>
+				  <a href="../handi2" target="_blank"><img class="lazy" data-original="img/work_etc_club_hd02.png"></a>
+				  <a href="../handi2" target="_blank"><img class="lazy" data-original="img/work_etc_club_hd02_02.png"></a>
+				  <a href="../handi3" target="_blank"><img class="lazy" data-original="img/work_etc_club_hd03.png"></a>
+				  <a href="../handi3" target="_blank"><img class="lazy" data-original="img/work_etc_club_hd03_02.png"></a>
+				  <a href="../masterchef" target="_blank"><img class="lazy" data-original="img/work_etc_club_mc.png"></a>
+			 </div>
 		</div> 
 
 	</div>
- 
+<script>
+		$("img.lazy").lazyload();
+		</script>
  </body>
 </html>
